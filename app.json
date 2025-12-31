@@ -1,4 +1,68 @@
 {
-  "name": "KidsBox",
-  "displayName": "KidsBox"
+  "name": "kidsbox",
+  "displayName": "KidsBox - Learn Math &amp; Sharpen Mind with Fun Games",
+  "expo": {
+    "name": "KidsBox",
+    "slug": "kidsbox",
+    "description": "KidsBox - Play, Learn &amp; Grow! Fun learning and educational games for children and families. Learn math, memory, colors, puzzles, and money counting (INR &amp; USD) with interactive fun. Loved by kids, parents, and teachers worldwide!",
+    "keywords": [
+      "kids learning app",
+      "educational games for children",
+      "fun learning for kids",
+      "math games for kids",
+      "color tap game",
+      "memory match game",
+      "puzzle learning app",
+      "preschool learning games",
+      "brain games for kids",
+      "indian kids learning app",
+      "american kids app",
+      "kidsbox app",
+      "kids education game",
+      "learning through play",
+      "kids game offline",
+      "learning app for toddlers",
+      "kids math puzzle",
+      "counting money game",
+      "english hindi learning app"
+    ],
+    "orientation": "portrait",
+    "primaryColor": "#FFBB33",
+    "backgroundColor": "#FFFFFF",
+    "version": "1.0.0",
+    "privacy": "public",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.kidsbox",
+      "versionCode": 1,
+      "permissions": [],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/games/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kidsbox"
+    },
+    "languages": ["en", "hi"],
+    "developer": {
+      "name": "Ashish Yadav",
+      "email": "ashishky892@gmail.com",
+      "country": "IN"
+    },
+    "metadata": {
+      "category": "Education, Kids, Family, Brain, Puzzle",
+      "targetCountries": "USA, India, UK, Canada, Australia",
+      "ageRating": "3+",
+      "appPurpose": "Learning &amp; Educational Games for Kids"
+    },
+    "extra": {
+      "aiSeoBoost": true,
+      "multiLanguage": true,
+      "offlineLearning": true,
+      "organicRankBoost": true
+    }
+  }
 }
