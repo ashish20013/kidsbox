@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kidsbox">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -23,5 +24,115 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+    </application>
+</manifest> -->
+
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kidsbox">
+
+    <!--  Permissions (Android 13+ Compliant) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <!-- Scoped media access for Android 13+ -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <!-- Optional legacy fallback for older devices -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:name=".MainApplication"
+        android:label="KidsBox"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <!--  SEO + ASO Optimized Metadata (Safe for Build) -->
+        <meta-data android:name="app.category" android:value="Education, Games, Learning, Brain, Puzzle, Family, Kids, Skill, Fun, Brain Training, Kids Learning, Family" />
+        <meta-data android:name="app.sub_category" android:value="Kids Learning, Educational Games, Preschool Learning, Brain Training, Math Learning, Memory Games" />
+        <meta-data android:name="app.target_audience" android:value="Kids, Parents, Teachers, Families, Learners" />
+        <meta-data android:name="app.locale" android:value="en, hi, es, fr, de" />
+        <meta-data android:name="app.supported_regions" android:value="India, United States, United Kingdom, Canada, Australia, Singapore, UAE" />
+        <meta-data android:name="app.age_rating" android:value="3+, Family Friendly, Educational" />
+        <meta-data android:name="app.developer" android:value="Ashish Kumar - IT Engineer" />
+        <meta-data android:name="app.language_support" android:value="English, Hindi" />
+        <meta-data android:name="app.country_target" android:value="IN, US, GB, CA, AU, SG, AE" />
+
+        <meta-data android:name="app.keywords"
+            android:value="kids learning app, educational games for children, math puzzles, color learning, memory match, preschool education, fun learning games, counting money INR USD, learning with fun, brain games for kids, kids education app, puzzle games for kids, learning math app for kids, free kids learning games offline" />
+
+        <meta-data android:name="app.description.short"
+            android:value="Fun Learning Games for Kids - Math, Memory &amp; Colors" />
+
+        <meta-data android:name="app.description.full"
+            android:value="KidsBox is a fun, safe, and educational app for kids worldwide. Play math puzzles, color tap, and memory games that teach addition, subtraction, multiplication, and division in a joyful way. Perfect for preschool and early learning!" />
+
+        <meta-data android:name="app.seo.tags"
+            android:value="learning games, math for kids, color puzzle, kids brain games, educational kids app, preschool learning app, memory trainer, number puzzle, toddler learning, play and learn" />
+
+        <meta-data android:name="app.featured_topics"
+            android:value="Math Fun, Memory Power, Brain Puzzle, Color Tap, Money Counting, Educational Play" />
+
+        <meta-data android:name="app.rating_target"
+            android:value="3+, Family Friendly, Teacher Approved" />
+
+        <meta-data android:name="app.description.hi"
+            android:value="किड्सबॉक्स बच्चों के लिए मज़ेदार लर्निंग ऐप है जिसमें गणित, रंग और मेमोरी गेम्स के ज़रिए बच्चे खेल-खेल में सीखते हैं। यह ऐप बच्चों की बुद्धि, याददाश्त और गणना कौशल को बढ़ाता है।" />
+
+        <meta-data android:name="app.keywords.hi"
+            android:value="बच्चों का लर्निंग ऐप, गणित खेल, कलर गेम, मेमोरी मैच, पहेली खेल, किड्स एजुकेशन ऐप, बच्चों की शिक्षा, बच्चों के लिए सीखने का गेम" />
+
+        <meta-data android:name="app.brand.tagline"
+            android:value="Play • Learn • Grow — Fun Learning Games for Kids" />
+
+        <meta-data android:name="app.theme.color" android:value="#FF8C00" />
+
+        <meta-data android:name="app.long_keywords"
+            android:value="kidsbox learning app, educational fun, preschool math, color tap for kids, brain puzzle, memory game for children, Indian learning app, US kids learning" />
+
+        <meta-data android:name="app.ai_visibility" android:value="high" />
+
+        <meta-data android:name="app.voice_commands"
+            android:value="play KidsBox math puzzle, open KidsBox color game, start memory match in KidsBox, KidsBox learn money counting" />
+
+        <meta-data android:name="app.global_keywords"
+            android:value="KidsBox, kids learning games, educational fun app, math puzzle, color learning, memory games, preschool learning, money counting game, kids math India, educational games USA, kids games Japan, brain games for kids, school learning, toddler fun games, family-friendly app, logical thinking, educational games UK, kids app Canada, kidsbox math learning" />
+
+        <!--  Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
+
+            <!-- App Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Deep Link + Voice + Search -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VOICE_COMMAND" />
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="kidsbox.app" android:pathPrefix="/learn" />
+            </intent-filter>
+        </activity>
+
+        <!--  Voice + Search Integration -->
+        <meta-data android:name="android.app.default_searchable" android:resource="@xml/searchable" />
+
     </application>
 </manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/app_name"
+    android:hint="Search KidsBox: math puzzles, color games, memory match, money counter"
+    android:includeInGlobalSearch="true"
+    android:searchMode="showSearchLabelAsBadge"
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    android:queryAfterZeroResults="true"
+    android:searchSuggestAuthority="com.kidsbox.searchprovider"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestIntentData="content://com.kidsbox.games.search"
+    android:searchSuggestThreshold="1"/>

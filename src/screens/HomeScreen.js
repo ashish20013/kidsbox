@@ -22,10 +22,11 @@ import {
   Linking,
   Easing,
 } from 'react-native';
-// import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import LinearGradient from '../react-native-linear-gradient';
+// import LinearGradient from '../react-native-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 
 const { width, height } = Dimensions.get('window');
 const AnimatedLinearGradient = Animated.createAnimatedComponent(LinearGradient);

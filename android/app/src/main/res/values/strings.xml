@@ -1,3 +1,74 @@
-<resources>
+<!-- <resources>
     <string name="app_name">KidsBox</string>
+ -->
+
+
+
+
+<resources>
+
+    <!-- App Title -->
+    <string name="app_name">KidsBox - Fun Learning Games</string>
+
+    <!-- Tagline (Appears under app name on Play Store) -->
+    <string name="app_tagline">Play, Learn &amp; Grow — Math, Memory, Colors &amp; Puzzles for Kids</string>
+
+    <!-- Long Description (SEO + ASO optimized for 2025 global ranking) -->
+    <string name="app_description">
+        KidsBox is the ultimate fun learning app for children, students, and families worldwide .
+        Designed for playful education, it helps kids learn through exciting math puzzles,
+        memory games, color tap challenges, and real money counter practice (INR &amp; USD).
+
+         Learn Addition, Subtraction, Multiplication &amp; Division in a joyful, game-based way.
+         Boost focus, logic, memory, and problem-solving skills through engaging mini-games.
+         Explore color tap &amp; matching challenges for brain stimulation and visual learning.
+         Learn money counting with real-world currencies — Indian Rupees (₹) and US Dollars ($).
+         Solve math puzzles, mazes, and number challenges — perfect for preschoolers to grown-ups.
+
+        KidsBox is 100% safe, offline-ready, and ad-free, built especially for kids aged 3+ to 12.
+        Parents love it. Teachers recommend it. Kids enjoy it every day!
+
+         FEATURES
+        Educational games for math, memory, and color learning
+         Offline support — no internet needed after setup
+         Ad-free mode — safe and family-friendly
+         Multi-age learning for toddlers, preschoolers, and students
+         Simple interface — easy to play, hard to put down!
+
+         Ideal for India, USA, UK, Canada, Australia, Japan &amp; global users
+         Turn screen time into smart learning time — download KidsBox today!
+    </string>
+
+    <!-- Keyword Bank (used for internal reference and SEO planning) -->
+    <string name="app_keywords">
+        kids learning games, fun learning app, educational games for kids, math puzzles,
+        memory match, color games, preschool learning, math learning app, counting money,
+        INR USD money counter, brain training for kids, fun math for kids,
+        puzzle games for children, offline educational app, safe learning app,
+        kidsbox math learning, toddler learning app, free kids games,
+        family educational app, color tap challenge, play and learn game,
+        global kids education app, best math app for kids, interactive learning game,
+        kids brain games, preschool education app, kindergarten math, logical thinking, iq games for kids, kids brain games, preschool education app, kindergarten math, logical thinking, iq games for kids
+
+    </string>
+
+    <!-- Locale and Category Metadata -->
+    <string name="app_locale">en, hi, ja</string>
+    <string name="app_category">Education, Kids, Family, Puzzle, Learning, Brain Training</string>
+
+    <!-- Regional Targeting -->
+    <string name="app_region_target">India, USA, UK, Canada, Australia, Japan, Europe</string>
+
+    <!-- Age Group and Audience -->
+    <string name="app_target_age">3+, preschool, students, parents, teachers</string>
+
+    <!-- Author Metadata -->
+    <string name="app_author">Ashish Kumar</string>
+
+    <!-- Promotional Line (for Play Console Promo Text section) -->
+    <string name="app_promo">✨ Play, Learn &amp; Grow — Fun math &amp; memory games loved by kids &amp; parents worldwide!</string>
+    <string name="app_keywords_hi">बच्चों का लर्निंग गेम, गणित खेल, रंग सीखने का ऐप, पहेली गेम</string>
+    <string name="app_keywords_ja">子供向け学習ゲーム, 数学パズル, カラーマッチ, メモリーゲーム</string>
+
+
 </resources>
